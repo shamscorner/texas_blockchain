@@ -27,7 +27,7 @@ $(window).on("load", function() {
   setTimeout(() => {
     $(".loader").css({
       background: 'url("../img/pre-loader/3.png") no-repeat center',
-      "background-size": "200px 200px"
+      "background-size": "205px 205px"
     });
     $("#pre-loader-text").fadeIn("slow");
   }, 1600);
