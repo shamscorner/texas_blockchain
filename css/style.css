@@ -120,6 +120,23 @@ Commom elements
 }
 /*---- end of logo ----*/
 
+/*---- coin section ----*/
+.coin-left {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: -87px;
+  top: 136px;
+}
+.coin-right {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: -82px;
+  top: 340px;
+}
+/*---- end of coin section ----*/
+
 /*---- gradient background container ----*/
 .gradient-bg-container {
   background-color: var(
@@ -213,6 +230,20 @@ Responsive
     top: 20px;
     left: 30px;
   }
+  /*---- coin section ----*/
+  .coin-left {
+    width: 350px;
+    height: 350px;
+    left: -150px;
+    top: 300px;
+  }
+  .coin-right {
+    width: 400px;
+    height: 400px;
+    right: -171px;
+    top: 480px;
+  }
+  /*---- end of coin section ----*/
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -226,6 +257,20 @@ Responsive
   .pd-100 {
     padding: 100px;
   }
+  /*---- coin section ----*/
+  .coin-left {
+    width: 400px;
+    height: 400px;
+    left: -150px;
+    top: 300px;
+  }
+  .coin-right {
+    width: 450px;
+    height: 450px;
+    right: -171px;
+    top: 480px;
+  }
+  /*---- end of coin section ----*/
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
