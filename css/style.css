@@ -9,6 +9,16 @@
  =================================*/
 
 /*----------------------------------------*/
+/* CSS variables
+/*----------------------------------------*/
+:root {
+  --text-blue: #2b88c4;
+  --gradient-bg-color: #005da5;
+  --gradient-end-bg-color: #0027a5;
+  --form-input-bg-color: #3472b7;
+}
+
+/*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
 
@@ -76,9 +86,66 @@ Commom elements
   display: none;
 }
 #preloder p span {
-  color: #2b88c4;
+  color: var(--text-blue);
 }
 /*---- end of loader ----*/
+
+/*---- gradient background container ----*/
+.gradient-bg-container {
+  background-color: var(
+    --gradient-bg-color
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    var(--gradient-bg-color),
+    var(--gradient-end-bg-color)
+  ); /* Standard syntax (must be last) */
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+}
+/*---- end of gradient background container ----*/
+
+/*---- form elements ----*/
+/*---- input ----*/
+.form-input-text {
+  background-color: var(--form-input-bg-color);
+  border: none;
+  border-radius: 0px;
+  padding: 15px;
+  color: white;
+}
+
+.form-input-text::placeholder {
+  color: lightgray;
+  opacity: 1; /* Firefox */
+}
+
+.form-input-text:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: lightgray;
+}
+
+.form-input-text::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: lightgray;
+}
+/*---- button ----*/
+.btn-main {
+  background-color: var(--gradient-bg-color);
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 1px solid var(--gradient-bg-color);
+}
+.btn-main:hover {
+  border: 1px solid lightgray;
+  transition: border 0.5s;
+}
+
+/*---- end of form elements ----*/
 
 /* ----------------
 Sign up page
@@ -94,10 +161,22 @@ Responsive
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .md-ml-20 {
+    margin-left: 20px;
+  }
+  .gradient-bg-container {
+    padding: 50px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .lg-ml-30 {
+    margin-left: 30px;
+  }
+  .gradient-bg-container {
+    padding: 80px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

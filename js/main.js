@@ -14,7 +14,7 @@ $(window).on("load", function() {
   /*------------------
 		Preloder
   --------------------*/
-  $(".loader").css({
+  /* $(".loader").css({
     background: 'url("../img/pre-loader/1.png") no-repeat center',
     "background-size": "110px 110px"
   });
@@ -34,7 +34,7 @@ $(window).on("load", function() {
 
   $("#preloder")
     .delay(3000)
-    .fadeOut("slow");
+    .fadeOut("slow"); */
 });
 
 (function($) {})(jQuery);
