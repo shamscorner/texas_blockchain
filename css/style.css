@@ -16,6 +16,8 @@
   --gradient-bg-color: #005da5;
   --gradient-end-bg-color: #0027a5;
   --form-input-bg-color: #3472b7;
+  --main-bg-color: #005ea5;
+  --main-bg-dark-color: #000b2d;
 }
 
 /*----------------------------------------*/
@@ -53,12 +55,14 @@ ol {
 Global elements
  -----------------------*/
 .bg-main {
-  background-color: #005ea5; /* For browsers that do not support gradients */
+  background-color: var(
+    --main-bg-color
+  ); /* For browsers that do not support gradients */
   background-image: linear-gradient(
     90deg,
-    #005ea5,
+    var(--main-bg-color),
     #005ba1,
-    #000b2d
+    var(--main-bg-dark-color)
   ); /* Standard syntax (must be last) */
 }
 
@@ -106,6 +110,15 @@ Commom elements
   color: var(--text-blue);
 }
 /*---- end of loader ----*/
+
+/*---- logo ----*/
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  color: white;
+}
+/*---- end of logo ----*/
 
 /*---- gradient background container ----*/
 .gradient-bg-container {
@@ -156,10 +169,12 @@ Commom elements
   font-weight: bold;
   border-radius: 50px;
   border: 1px solid var(--gradient-bg-color);
+  width: 200px;
 }
 .btn-main:hover {
   border: 1px solid lightgray;
   transition: border 0.5s;
+  cursor: pointer;
 }
 
 /*---- end of form elements ----*/
@@ -190,6 +205,13 @@ Responsive
   }
   .pd-100 {
     padding: 50px;
+  }
+  .btn-main {
+    width: 300px;
+  }
+  .logo {
+    top: 20px;
+    left: 30px;
   }
 }
 
