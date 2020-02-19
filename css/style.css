@@ -50,6 +50,23 @@ ol {
 }
 
 /*---------------------
+Global elements
+ -----------------------*/
+.bg-main {
+  background-color: #005ea5; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    90deg,
+    #005ea5,
+    #005ba1,
+    #000b2d
+  ); /* Standard syntax (must be last) */
+}
+
+.pd-100 {
+  padding: 20px;
+}
+
+/*---------------------
 Commom elements
  -----------------------*/
 
@@ -148,8 +165,12 @@ Commom elements
 /*---- end of form elements ----*/
 
 /* ----------------
-Sign up page
+Login page
  -------------------*/
+.confirmation-text {
+  margin-top: 65px;
+  color: whitesmoke;
+}
 
 /* ----------------
 Responsive
@@ -167,6 +188,9 @@ Responsive
   .gradient-bg-container {
     padding: 50px;
   }
+  .pd-100 {
+    padding: 50px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -176,6 +200,9 @@ Responsive
   }
   .gradient-bg-container {
     padding: 80px;
+  }
+  .pd-100 {
+    padding: 100px;
   }
 }
 
