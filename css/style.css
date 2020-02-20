@@ -133,7 +133,7 @@ Commom elements
   width: 200px;
   height: 200px;
   right: -82px;
-  top: 340px;
+  top: 298px;
 }
 /*---- end of coin section ----*/
 
@@ -200,7 +200,7 @@ Commom elements
 Login page
  -------------------*/
 .confirmation-text {
-  margin-top: 65px;
+  margin-top: 20px;
   color: whitesmoke;
 }
 
@@ -244,6 +244,12 @@ Responsive
     top: 480px;
   }
   /*---- end of coin section ----*/
+
+  /*---- confirmation text ----*/
+  .confirmation-text {
+    margin-top: 65px;
+  }
+  /*---- end of confirmation text ----*/
 }
 
 /* Large devices (desktops, 992px and up) */
