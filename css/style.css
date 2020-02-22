@@ -97,6 +97,11 @@ Global elements
   border: none;
 }
 
+.bg-transparent {
+  background-image: none !important;
+  z-index: 1;
+}
+
 /*---------------------
 Commom elements
  -----------------------*/
@@ -176,6 +181,18 @@ Commom elements
   right: -82px;
   top: 298px;
 }
+.img-lg-w-400 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 620px;
+}
+.img-lg-group-lower {
+  width: 100px;
+  height: 100px;
+  left: -38px;
+  top: 201px;
+}
 /*---- end of coin section ----*/
 
 /*---- gradient background container ----*/
@@ -228,6 +245,9 @@ Commom elements
   border-radius: 50px;
   border: 1px solid var(--gradient-bg-color);
   width: 200px;
+  -webkit-box-shadow: -5px -5px 11px -3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: -5px -5px 11px -3px rgba(0, 0, 0, 0.35);
+  box-shadow: -5px -5px 11px -3px rgba(0, 0, 0, 0.35);
 }
 .btn-main:hover {
   border: 1px solid lightgray;
@@ -240,6 +260,13 @@ Commom elements
 /*---- navbar ----*/
 .navbar-brand {
   font-size: 1.1rem;
+}
+
+.sticky-navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .bg-navbar {
@@ -296,6 +323,7 @@ Login page
 .confirmation-text {
   margin-top: 20px;
   color: whitesmoke;
+  font-size: 16px;
 }
 
 /* ----------------
@@ -368,11 +396,50 @@ leaderboard page
 }
 
 /* ----------------
+Attendance page
+ -------------------*/
+.icon-responsive {
+  width: 35px;
+}
+
+/* ----------------
 Responsive
  -------------------*/
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
+  .responsive-height {
+    min-height: 650px;
+  }
+  .margin-lg-top-for-nav {
+    margin-top: 55px;
+  }
+  .img-lg-w-400 {
+    width: 150px;
+    height: 150px;
+    top: 355px;
+  }
+  .bg-show-for-nav {
+    background-color: var(
+      --gradient-bg-color
+    ) !important; /* For browsers that do not support gradients */
+    background-image: linear-gradient(
+      var(--gradient-bg-color),
+      var(--gradient-end-bg-color)
+    ) !important; /* Standard syntax (must be last) */
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-show-for-nav {
+    background-color: var(
+      --gradient-bg-color
+    ) !important; /* For browsers that do not support gradients */
+    background-image: linear-gradient(
+      var(--gradient-bg-color),
+      var(--gradient-end-bg-color)
+    ) !important; /* Standard syntax (must be last) */
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -396,6 +463,16 @@ Responsive
   .bg-curvy {
     background-size: 100% 440px;
   }
+  .icon-responsive {
+    width: 80px;
+  }
+
+  /*---- navbar section ----*/
+  .margin-lg-top-for-nav {
+    margin-top: 30px;
+  }
+  /*---- end of navbar section ----*/
+
   /*---- coin section ----*/
   .coin-left {
     width: 350px;
@@ -423,11 +500,22 @@ Responsive
     right: -171px;
     top: 480px;
   }
+  .img-lg-w-400 {
+    width: 350px;
+    height: 350px;
+    top: 620px;
+  }
+  .img-lg-group-lower {
+    width: 300px;
+    height: 280px;
+    top: 600px;
+  }
   /*---- end of coin section ----*/
 
   /*---- confirmation text ----*/
   .confirmation-text {
     margin-top: 65px;
+    font-size: 24px;
   }
   /*---- end of confirmation text ----*/
 
@@ -475,6 +563,15 @@ Responsive
     height: 450px;
     right: -171px;
     top: 480px;
+  }
+  .img-lg-w-400 {
+    width: 400px;
+    height: 400px;
+  }
+  .img-lg-group-lower {
+    width: 320px;
+    height: 300px;
+    top: 600px;
   }
   /*---- end of coin section ----*/
 
