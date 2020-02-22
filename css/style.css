@@ -18,6 +18,8 @@
   --form-input-bg-color: #3472b7;
   --main-bg-color: #005ea5;
   --main-bg-dark-color: #000b2d;
+  --accent-orange-color: #ffb300;
+  --logo-color: #c0deff;
 }
 
 /*----------------------------------------*/
@@ -65,14 +67,45 @@ Global elements
     var(--main-bg-dark-color)
   ); /* Standard syntax (must be last) */
 }
-
+.bg-second {
+  background-color: #f2f2f2;
+}
 .pd-100 {
   padding: 20px;
+}
+.bg-curvy {
+  background: url("../img/bg-curvy.png") no-repeat;
+  background-size: auto 915px;
+}
+.container-round {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+.borderless td,
+.borderless th {
+  border: none;
+}
+
+.borderless > tbody > tr > td,
+.borderless > tbody > tr > th,
+.borderless > tfoot > tr > td,
+.borderless > tfoot > tr > th,
+.borderless > thead > tr > td,
+.borderless > thead > tr > th {
+  border: none;
 }
 
 /*---------------------
 Commom elements
  -----------------------*/
+
+/*---- navbar branding ----*/
+.navbar-dark .navbar-brand {
+  color: var(--logo-color);
+}
+/*---- end of navbar branding ----*/
 
 /*---- Preloder ----*/
 #preloder {
@@ -196,12 +229,134 @@ Commom elements
 
 /*---- end of form elements ----*/
 
+/*---- navbar ----*/
+.navbar-brand {
+  font-size: 1.1rem;
+}
+
+.bg-navbar {
+  background-color: var(
+    --gradient-bg-color
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    var(--gradient-bg-color),
+    var(--gradient-end-bg-color)
+  ); /* Standard syntax (must be last) */
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid white;
+}
+
+.navbar-dark .navbar-nav .nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/*---- end of navbar ----*/
+
+/*---- nav links ----*/
+.custom-nav-links .nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.custom-nav-links .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 3px;
+}
+.custom-nav-links .nav-link.active {
+  border-bottom: 3px solid white;
+  color: white;
+}
+/*---- end of nav links ----*/
+
+/*---- page end draw line ----*/
+.end-draw-line {
+  width: 150px;
+  height: 5px;
+  background-color: var(--accent-orange-color);
+}
+/*---- end of page end draw line ----*/
+
 /* ----------------
 Login page
  -------------------*/
 .confirmation-text {
   margin-top: 20px;
   color: whitesmoke;
+}
+
+/* ----------------
+leaderboard page 
+ -------------------*/
+#leaderboard-tab-content {
+  min-height: 360px;
+}
+.profile-container {
+  padding: 12px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.profile-container .profile-container-holder {
+  background-color: #2b8cc4;
+  padding: 20px 50px 20px 20px;
+  position: relative;
+}
+.profile-container .profile-container-inner {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.profile-container p {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.profile-container p span {
+  font-size: 10px;
+}
+.profile-container p img {
+  margin-top: -5px;
+}
+.container-badge {
+  position: absolute;
+  bottom: 0px;
+  right: 25px;
+}
+#leaderboard-members-table {
+  margin-top: 150px;
+  margin: 150px 10px 70px 10px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+#leaderboard-members-table > tbody > tr > td {
+  -webkit-box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+#leaderboard-members-table > tbody > tr > td:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -webkit-box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.3);
+}
+#leaderboard-members-table > tbody > tr > td:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.3);
 }
 
 /* ----------------
@@ -230,6 +385,9 @@ Responsive
     top: 20px;
     left: 30px;
   }
+  .bg-curvy {
+    background-size: 100% 440px;
+  }
   /*---- coin section ----*/
   .coin-left {
     width: 350px;
@@ -250,6 +408,12 @@ Responsive
     margin-top: 65px;
   }
   /*---- end of confirmation text ----*/
+
+  /*---- profile container in the leaderboard page ----*/
+  #leaderboard-members-table .profile-picture {
+    margin-top: 15px;
+  }
+  /*---- end of profile container in the leaderboard page ----*/
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -277,6 +441,13 @@ Responsive
     top: 480px;
   }
   /*---- end of coin section ----*/
+
+  /*---- profile container in the leaderboard page ----*/
+  .profile-container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  /*---- end of profile container in the leaderboard page ----*/
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
