@@ -102,6 +102,10 @@ Global elements
   z-index: 1;
 }
 
+.bg-rounded-white {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+}
 /*---------------------
 Commom elements
  -----------------------*/
@@ -254,6 +258,23 @@ Commom elements
   transition: border 0.5s;
   cursor: pointer;
 }
+a.btn-load-more {
+  color: white;
+  text-decoration: none;
+}
+.btn-load-more div {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+a.btn-icon {
+  color: white;
+  text-decoration: none;
+}
+a.btn-icon:hover {
+  color: var(--logo-color);
+}
 
 /*---- end of form elements ----*/
 
@@ -403,6 +424,15 @@ Attendance page
 }
 
 /* ----------------
+Everyone page
+ -------------------*/
+#btn-everyone-search {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+/* ----------------
 Responsive
  -------------------*/
 
@@ -439,6 +469,10 @@ Responsive
       var(--gradient-bg-color),
       var(--gradient-end-bg-color)
     ) !important; /* Standard syntax (must be last) */
+  }
+  #btn-everyone-search {
+    right: 20px;
+    top: 20px;
   }
 }
 
