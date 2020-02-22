@@ -32,635 +32,650 @@
     <![endif]-->
   </head>
   <body class="bg-second">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
-      <a class="navbar-brand" href="signup.html">TEXAS | BLOCKCHAIN</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="h-100 position-relative" style="overflow-x: hidden;">
+      <img class="coin-group" src="./img/coin-group.png" alt="Coin Left" />
+      <img
+        class="coin-right-without-shadow"
+        src="./img/coin-right-without-shadow.png"
+        alt="Coin Right"
+      />
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="leaderboard.html"
-              >Leaderboard <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Attendance</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Bounty</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Reward</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Profiles</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- end of navbar -->
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+        <a class="navbar-brand" href="signup.html">TEXAS | BLOCKCHAIN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- main content -->
-    <div class="container-fluid bg-curvy">
-      <div class="container">
-        <div class="row">
-          <div class="custom-nav-links p-3">
-            <!-- nav links -->
-            <ul class="nav mb-3" role="tablist">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  id="pills-overall-tab"
-                  data-toggle="pill"
-                  href="#pills-overall"
-                  role="tab"
-                  aria-controls="pills-overall"
-                  aria-selected="true"
-                  >OVERALL</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="pills-following-tab"
-                  data-toggle="pill"
-                  href="#pills-following"
-                  role="tab"
-                  aria-controls="pills-following"
-                  aria-selected="false"
-                  >FOLLOWING</a
-                >
-              </li>
-            </ul>
-            <!-- end of nav links-->
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="leaderboard.html"
+                >Leaderboard <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Attendance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bounty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reward</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profiles</a>
+            </li>
+          </ul>
         </div>
-        <!-- nav items -->
-        <div class="row">
-          <div class="tab-content w-100" id="leaderboard-tab-content">
-            <!-- tab overall -->
-            <div
-              class="tab-pane fade show active"
-              id="pills-overall"
-              role="tabpanel"
-              aria-labelledby="pills-overall-tab"
-            >
-              <div class="row">
-                <div class="col-md-4">
-                  <!-- profile container -->
-                  <div class="profile-container">
-                    <div class="profile-container-holder">
-                      <div class="profile-container-inner text-center">
-                        <img
-                          src="./img/profiles/p1.png"
-                          class="rounded-circle mb-2"
-                          width="50"
-                          height="50"
-                          alt="Profile Picture"
-                        />
-                        <p>
-                          Edward Hughes<br /><span>EARNED</span><br /><img
-                            src="./img/icons/icon-money.png"
-                            width="22"
-                            class="mr-1"
-                          />900
-                        </p>
-                      </div>
-                      <div
-                        class="container-round d-flex justify-content-center align-items-center container-badge"
-                      >
-                        <img
-                          src="./img/badges/1.png"
-                          width="40"
-                          height="40"
-                          alt="Badge"
-                        />
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- main content -->
+      <div class="container-fluid bg-curvy">
+        <div class="container">
+          <div class="row">
+            <div class="custom-nav-links p-3">
+              <!-- nav links -->
+              <ul class="nav mb-3" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="pills-overall-tab"
+                    data-toggle="pill"
+                    href="#pills-overall"
+                    role="tab"
+                    aria-controls="pills-overall"
+                    aria-selected="true"
+                    >OVERALL</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-following-tab"
+                    data-toggle="pill"
+                    href="#pills-following"
+                    role="tab"
+                    aria-controls="pills-following"
+                    aria-selected="false"
+                    >FOLLOWING</a
+                  >
+                </li>
+              </ul>
+              <!-- end of nav links-->
+            </div>
+          </div>
+          <!-- nav items -->
+          <div class="row">
+            <div class="tab-content w-100" id="leaderboard-tab-content">
+              <!-- tab overall -->
+              <div
+                class="tab-pane fade show active"
+                id="pills-overall"
+                role="tabpanel"
+                aria-labelledby="pills-overall-tab"
+              >
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- profile container -->
+                    <div class="profile-container">
+                      <div class="profile-container-holder">
+                        <div class="profile-container-inner text-center">
+                          <img
+                            src="./img/profiles/p1.png"
+                            class="rounded-circle mb-2"
+                            width="50"
+                            height="50"
+                            alt="Profile Picture"
+                          />
+                          <p>
+                            Edward Hughes<br /><span>EARNED</span><br /><img
+                              src="./img/icons/icon-money.png"
+                              width="22"
+                              class="mr-1"
+                            />900
+                          </p>
+                        </div>
+                        <div
+                          class="container-round d-flex justify-content-center align-items-center container-badge"
+                        >
+                          <img
+                            src="./img/badges/1.png"
+                            width="40"
+                            height="40"
+                            alt="Badge"
+                          />
+                        </div>
                       </div>
                     </div>
+                    <!-- end of profile container -->
                   </div>
-                  <!-- end of profile container -->
-                </div>
-                <div class="col-md-4">
-                  <!-- profile container -->
-                  <div class="profile-container">
-                    <div class="profile-container-holder">
-                      <div class="profile-container-inner text-center">
-                        <img
-                          src="./img/profiles/p2.png"
-                          class="rounded-circle mb-2"
-                          width="50"
-                          height="50"
-                          alt="Profile Picture"
-                        />
-                        <p>
-                          Ariya Downes<br /><span>EARNED</span><br /><img
-                            src="./img/icons/icon-money-bag.png"
-                            width="22"
-                            class="mr-1"
-                          />956
-                        </p>
-                      </div>
-                      <div
-                        class="container-round d-flex justify-content-center align-items-center container-badge"
-                      >
-                        <img
-                          src="./img/badges/2.png"
-                          width="40"
-                          height="40"
-                          alt="Badge"
-                        />
+                  <div class="col-md-4">
+                    <!-- profile container -->
+                    <div class="profile-container">
+                      <div class="profile-container-holder">
+                        <div class="profile-container-inner text-center">
+                          <img
+                            src="./img/profiles/p2.png"
+                            class="rounded-circle mb-2"
+                            width="50"
+                            height="50"
+                            alt="Profile Picture"
+                          />
+                          <p>
+                            Ariya Downes<br /><span>EARNED</span><br /><img
+                              src="./img/icons/icon-money-bag.png"
+                              width="22"
+                              class="mr-1"
+                            />956
+                          </p>
+                        </div>
+                        <div
+                          class="container-round d-flex justify-content-center align-items-center container-badge"
+                        >
+                          <img
+                            src="./img/badges/2.png"
+                            width="40"
+                            height="40"
+                            alt="Badge"
+                          />
+                        </div>
                       </div>
                     </div>
+                    <!-- end of profile container -->
                   </div>
-                  <!-- end of profile container -->
+                  <div class="col-md-4">
+                    <!-- profile container -->
+                    <div class="profile-container">
+                      <div class="profile-container-holder">
+                        <div class="profile-container-inner text-center">
+                          <img
+                            src="./img/profiles/p3.png"
+                            class="rounded-circle mb-2"
+                            width="50"
+                            height="50"
+                            alt="Profile Picture"
+                          />
+                          <p>
+                            Edward Hughes<br /><span>EARNED</span><br /><img
+                              src="./img/icons/icon-money-bundle.png"
+                              width="22"
+                              class="mr-1"
+                            />700
+                          </p>
+                        </div>
+                        <div
+                          class="container-round d-flex justify-content-center align-items-center container-badge"
+                        >
+                          <img
+                            src="./img/badges/3.png"
+                            width="40"
+                            height="40"
+                            alt="Badge"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of profile container -->
+                  </div>
                 </div>
-                <div class="col-md-4">
-                  <!-- profile container -->
-                  <div class="profile-container">
-                    <div class="profile-container-holder">
-                      <div class="profile-container-inner text-center">
-                        <img
-                          src="./img/profiles/p3.png"
-                          class="rounded-circle mb-2"
-                          width="50"
-                          height="50"
-                          alt="Profile Picture"
-                        />
-                        <p>
-                          Edward Hughes<br /><span>EARNED</span><br /><img
+
+                <div class="row">
+                  <table class="borderless" id="leaderboard-members-table">
+                    <thead>
+                      <tr class="text-center">
+                        <th scope="col">RANK</th>
+                        <th scope="col">MEMBER</th>
+                        <th scope="col">EARNED</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p4.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Aarush Wels</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
                             src="./img/icons/icon-money-bundle.png"
                             width="22"
                             class="mr-1"
                           />700
-                        </p>
-                      </div>
-                      <div
-                        class="container-round d-flex justify-content-center align-items-center container-badge"
-                      >
-                        <img
-                          src="./img/badges/3.png"
-                          width="40"
-                          height="40"
-                          alt="Badge"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end of profile container -->
-                </div>
-              </div>
-
-              <div class="row">
-                <table class="borderless" id="leaderboard-members-table">
-                  <thead>
-                    <tr class="text-center">
-                      <th scope="col">RANK</th>
-                      <th scope="col">MEMBER</th>
-                      <th scope="col">EARNED</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
-                          <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p4.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
-                          />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Aarush Wels</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p9.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Krystal Hogg</p>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bundle.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
+                        </td>
+                        <td class="text-center">
                           <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p9.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
-                          />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Krystal Hogg</p>
+                            src="./img/icons/icon-money-bag.png"
+                            width="22"
+                            class="mr-1"
+                          />700
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p5.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">
+                                Giulia Alvarado
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bag.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
+                        </td>
+                        <td class="text-center">
                           <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p5.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
-                          />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Giulia Alvarado</p>
+                            src="./img/icons/icon-money.png"
+                            width="22"
+                            class="mr-1"
+                          />700
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p6.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Idris Cochran</p>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
+                        </td>
+                        <td class="text-center">
                           <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p6.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
-                          />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Idris Cochran</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bundle.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
-                          <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p4.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
-                          />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Aarush Wels</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bundle.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
-                          <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p9.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
-                          />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Krystal Hogg</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bag.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
-                          <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p5.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
-                          />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Giulia Alvarado</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
-                          <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p6.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
-                          />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Idris Cochran</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bundle.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- end of tab overall -->
-
-            <!-- tab following -->
-            <div
-              class="tab-pane fade"
-              id="pills-following"
-              role="tabpanel"
-              aria-labelledby="pills-following-tab"
-            >
-              <div class="row">
-                <div class="col-md-4">
-                  <!-- profile container -->
-                  <div class="profile-container">
-                    <div class="profile-container-holder">
-                      <div class="profile-container-inner text-center">
-                        <img
-                          src="./img/profiles/p3.png"
-                          class="rounded-circle mb-2"
-                          width="50"
-                          height="50"
-                          alt="Profile Picture"
-                        />
-                        <p>
-                          Edward Hughes<br /><span>EARNED</span><br /><img
                             src="./img/icons/icon-money-bundle.png"
                             width="22"
                             class="mr-1"
                           />700
-                        </p>
-                      </div>
-                      <div
-                        class="container-round d-flex justify-content-center align-items-center container-badge"
-                      >
-                        <img
-                          src="./img/badges/3.png"
-                          width="40"
-                          height="40"
-                          alt="Badge"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end of profile container -->
-                </div>
-                <div class="col-md-4">
-                  <!-- profile container -->
-                  <div class="profile-container">
-                    <div class="profile-container-holder">
-                      <div class="profile-container-inner text-center">
-                        <img
-                          src="./img/profiles/p2.png"
-                          class="rounded-circle mb-2"
-                          width="50"
-                          height="50"
-                          alt="Profile Picture"
-                        />
-                        <p>
-                          Ariya Downes<br /><span>EARNED</span><br /><img
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p4.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Aarush Wels</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
+                            src="./img/icons/icon-money-bundle.png"
+                            width="22"
+                            class="mr-1"
+                          />700
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p9.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Krystal Hogg</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
                             src="./img/icons/icon-money-bag.png"
                             width="22"
                             class="mr-1"
-                          />956
-                        </p>
-                      </div>
-                      <div
-                        class="container-round d-flex justify-content-center align-items-center container-badge"
-                      >
-                        <img
-                          src="./img/badges/2.png"
-                          width="40"
-                          height="40"
-                          alt="Badge"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end of profile container -->
-                </div>
-                <div class="col-md-4">
-                  <!-- profile container -->
-                  <div class="profile-container">
-                    <div class="profile-container-holder">
-                      <div class="profile-container-inner text-center">
-                        <img
-                          src="./img/profiles/p1.png"
-                          class="rounded-circle mb-2"
-                          width="50"
-                          height="50"
-                          alt="Profile Picture"
-                        />
-                        <p>
-                          Edward Hughes<br /><span>EARNED</span><br /><img
+                          />700
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p5.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">
+                                Giulia Alvarado
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
                             src="./img/icons/icon-money.png"
                             width="22"
                             class="mr-1"
-                          />900
-                        </p>
-                      </div>
-                      <div
-                        class="container-round d-flex justify-content-center align-items-center container-badge"
-                      >
-                        <img
-                          src="./img/badges/1.png"
-                          width="40"
-                          height="40"
-                          alt="Badge"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end of profile container -->
+                          />700
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p6.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Idris Cochran</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
+                            src="./img/icons/icon-money-bundle.png"
+                            width="22"
+                            class="mr-1"
+                          />700
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
+              <!-- end of tab overall -->
 
-              <div class="row">
-                <table class="borderless" id="leaderboard-members-table">
-                  <thead>
-                    <tr class="text-center">
-                      <th scope="col">RANK</th>
-                      <th scope="col">MEMBER</th>
-                      <th scope="col">EARNED</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
+              <!-- tab following -->
+              <div
+                class="tab-pane fade"
+                id="pills-following"
+                role="tabpanel"
+                aria-labelledby="pills-following-tab"
+              >
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- profile container -->
+                    <div class="profile-container">
+                      <div class="profile-container-holder">
+                        <div class="profile-container-inner text-center">
                           <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p6.png"
-                            alt="Name"
+                            src="./img/profiles/p3.png"
+                            class="rounded-circle mb-2"
                             width="50"
                             height="50"
+                            alt="Profile Picture"
                           />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Idris Cochran</p>
-                          </div>
+                          <p>
+                            Edward Hughes<br /><span>EARNED</span><br /><img
+                              src="./img/icons/icon-money-bundle.png"
+                              width="22"
+                              class="mr-1"
+                            />700
+                          </p>
                         </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bundle.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
+                        <div
+                          class="container-round d-flex justify-content-center align-items-center container-badge"
+                        >
                           <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p9.png"
-                            alt="Name"
+                            src="./img/badges/3.png"
+                            width="40"
+                            height="40"
+                            alt="Badge"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of profile container -->
+                  </div>
+                  <div class="col-md-4">
+                    <!-- profile container -->
+                    <div class="profile-container">
+                      <div class="profile-container-holder">
+                        <div class="profile-container-inner text-center">
+                          <img
+                            src="./img/profiles/p2.png"
+                            class="rounded-circle mb-2"
                             width="50"
                             height="50"
+                            alt="Profile Picture"
                           />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Krystal Hogg</p>
-                          </div>
+                          <p>
+                            Ariya Downes<br /><span>EARNED</span><br /><img
+                              src="./img/icons/icon-money-bag.png"
+                              width="22"
+                              class="mr-1"
+                            />956
+                          </p>
                         </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bag.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
+                        <div
+                          class="container-round d-flex justify-content-center align-items-center container-badge"
+                        >
                           <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p5.png"
-                            alt="Name"
+                            src="./img/badges/2.png"
+                            width="40"
+                            height="40"
+                            alt="Badge"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of profile container -->
+                  </div>
+                  <div class="col-md-4">
+                    <!-- profile container -->
+                    <div class="profile-container">
+                      <div class="profile-container-holder">
+                        <div class="profile-container-inner text-center">
+                          <img
+                            src="./img/profiles/p1.png"
+                            class="rounded-circle mb-2"
                             width="50"
                             height="50"
+                            alt="Profile Picture"
                           />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Giulia Alvarado</p>
-                          </div>
+                          <p>
+                            Edward Hughes<br /><span>EARNED</span><br /><img
+                              src="./img/icons/icon-money.png"
+                              width="22"
+                              class="mr-1"
+                            />900
+                          </p>
                         </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="text-center">4</td>
-                      <td class="d-flex p-2">
-                        <div class="media mx-auto">
+                        <div
+                          class="container-round d-flex justify-content-center align-items-center container-badge"
+                        >
                           <img
-                            class="align-self-center mr-3 rounded-circle"
-                            src="./img/profiles/p4.png"
-                            alt="Name"
-                            width="50"
-                            height="50"
+                            src="./img/badges/1.png"
+                            width="40"
+                            height="40"
+                            alt="Badge"
                           />
-                          <div class="media-body">
-                            <p class="mb-0 profile-picture">Aarush Wels</p>
-                          </div>
                         </div>
-                      </td>
-                      <td class="text-center">
-                        <img
-                          src="./img/icons/icon-money-bundle.png"
-                          width="22"
-                          class="mr-1"
-                        />700
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                      </div>
+                    </div>
+                    <!-- end of profile container -->
+                  </div>
+                </div>
+
+                <div class="row">
+                  <table class="borderless" id="leaderboard-members-table">
+                    <thead>
+                      <tr class="text-center">
+                        <th scope="col">RANK</th>
+                        <th scope="col">MEMBER</th>
+                        <th scope="col">EARNED</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p6.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Idris Cochran</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
+                            src="./img/icons/icon-money-bundle.png"
+                            width="22"
+                            class="mr-1"
+                          />700
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p9.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Krystal Hogg</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
+                            src="./img/icons/icon-money-bag.png"
+                            width="22"
+                            class="mr-1"
+                          />700
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p5.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">
+                                Giulia Alvarado
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
+                            src="./img/icons/icon-money.png"
+                            width="22"
+                            class="mr-1"
+                          />700
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="text-center">4</td>
+                        <td class="d-flex p-2">
+                          <div class="media mx-auto">
+                            <img
+                              class="align-self-center mr-3 rounded-circle"
+                              src="./img/profiles/p4.png"
+                              alt="Name"
+                              width="50"
+                              height="50"
+                            />
+                            <div class="media-body">
+                              <p class="mb-0 profile-picture">Aarush Wels</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <img
+                            src="./img/icons/icon-money-bundle.png"
+                            width="22"
+                            class="mr-1"
+                          />700
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
+              <!-- end of tab following -->
             </div>
-            <!-- end of tab following -->
           </div>
+          <!-- end of nav items -->
         </div>
-        <!-- end of nav items -->
       </div>
-    </div>
-    <!-- end of main content-->
+      <!-- end of main content-->
 
-    <div class="d-flex w-100">
-      <div class="end-draw-line mx-auto"></div>
+      <div class="d-flex w-100">
+        <div class="end-draw-line mx-auto"></div>
+      </div>
     </div>
 
     <!--====== Javascripts & Jquery ======-->
