@@ -240,6 +240,21 @@ Commom elements
   /* Microsoft Edge */
   color: lightgray;
 }
+.transparent-rounded-input .input-group input,
+.transparent-rounded-input .input-group .input-group-text {
+  background: transparent;
+  color: white;
+  border: none;
+  background: #4b75bb;
+}
+.transparent-rounded-input .input-group input {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.transparent-rounded-input .input-group .input-group-text {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 /*---- button ----*/
 .btn-main {
   background-color: var(--gradient-bg-color);
@@ -558,6 +573,12 @@ Responsive
     margin-top: 15px;
   }
   /*---- end of profile container in the leaderboard page ----*/
+
+  /*---- profile search page ----*/
+  #everyone-search-field .transparent-rounded-input input {
+    width: 400px;
+  }
+  /*---- end of profile search page ----*/
 }
 
 /* Large devices (desktops, 992px and up) */
