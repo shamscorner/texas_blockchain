@@ -106,6 +106,45 @@ Global elements
   background-color: #f2f2f2;
   border-radius: 30px;
 }
+
+.bg-circular-white {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.text-lg {
+  font-size: 64px;
+}
+.text-md {
+  font-size: 22px;
+}
+.text-gray {
+  color: rgb(102, 102, 102);
+}
+
+.hr-seperator {
+  border: 2px solid white;
+  width: 150px;
+}
+
+.div-separator {
+  height: 80px;
+}
+
+.border-orange {
+  border: 10px solid orange;
+}
+.border-blue {
+  border: 10px solid var(--text-blue);
+}
+
+a.link-white {
+  color: white;
+}
+
+a.link-white:hover {
+  text-decoration: underline;
+}
 /*---------------------
 Commom elements
  -----------------------*/
@@ -448,11 +487,33 @@ Everyone page
 }
 
 /* ----------------
+Profile page
+ -------------------*/
+.profile-show-container {
+  width: 200px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.profile-show-container p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ----------------
 Responsive
  -------------------*/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  .text-lg {
+    font-size: 36px;
+  }
+  .text-md {
+    font-size: 18px;
+  }
   .responsive-height {
     min-height: 650px;
   }
