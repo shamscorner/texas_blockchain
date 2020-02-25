@@ -13,6 +13,7 @@
 /*----------------------------------------*/
 :root {
   --text-blue: #2b88c4;
+  --text-red: #e32135;
   --gradient-bg-color: #005da5;
   --gradient-end-bg-color: #0027a5;
   --form-input-bg-color: #3472b7;
@@ -67,6 +68,15 @@ Global elements
     var(--main-bg-dark-color)
   ); /* Standard syntax (must be last) */
 }
+.bg-blue {
+  background-color: var(--text-blue);
+}
+.bg-red {
+  background-color: var(--text-red);
+}
+.border-radius-big {
+  border-radius: 30px;
+}
 .bg-second {
   background-color: #f2f2f2;
 }
@@ -118,6 +128,9 @@ Global elements
 .text-md {
   font-size: 22px;
 }
+.text-sm {
+  font-size: 12px;
+}
 .text-gray {
   color: rgb(102, 102, 102);
 }
@@ -144,6 +157,11 @@ a.link-white {
 
 a.link-white:hover {
   text-decoration: underline;
+}
+
+.width-small-square {
+  width: 100px;
+  height: 100px;
 }
 /*---------------------
 Commom elements
@@ -311,6 +329,21 @@ Commom elements
   border: 1px solid lightgray;
   transition: border 0.5s;
   cursor: pointer;
+}
+.btn-transparent {
+  background: transparent;
+  padding: 10px 20px;
+  width: 120px;
+  font-weight: bold;
+  border-radius: 50px;
+  -webkit-box-shadow: -5px -5px 11px -3px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: -5px -5px 11px -3px rgba(0, 0, 0, 0.45);
+  box-shadow: -5px -5px 11px -3px rgba(0, 0, 0, 0.45);
+  border: 1px solid transparent;
+}
+.btn-transparent:hover {
+  border: 1px solid rgb(230, 230, 230);
+  transition: border 0.5s;
 }
 a.btn-load-more {
   color: white;
@@ -480,7 +513,7 @@ Attendance page
 /* ----------------
 Everyone page
  -------------------*/
-#btn-everyone-search {
+.btn-everyone-search {
   position: absolute;
   right: 30px;
   top: 30px;
@@ -500,6 +533,13 @@ Profile page
 .profile-show-container p {
   font-size: 28px;
   font-weight: bold;
+}
+
+/* ----------------
+Bounty page
+ -------------------*/
+.bounty-container {
+  display: none;
 }
 
 /* ----------------
@@ -611,7 +651,7 @@ Responsive
       var(--gradient-end-bg-color)
     ) !important; /* Standard syntax (must be last) */
   }
-  #btn-everyone-search {
+  .btn-everyone-search {
     right: 20px;
     top: 20px;
   }

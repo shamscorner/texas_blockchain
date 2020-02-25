@@ -35,6 +35,20 @@ $(window).on("load", function() {
   $("#preloder")
     .delay(3000)
     .fadeOut("slow");
+
+  /*------------------
+		bounty page
+  --------------------*/
+  // add the toggle functionality using React or Vue framwork
+  // and remove this click functionality from here
+  for (let i = 1; i < 5; i++) {
+    $("#btn-apply-" + i).click(function() {
+      $("#bounty-container-" + i).show(100);
+    });
+    $("#btn-hide-" + i).click(function() {
+      $("#bounty-container-" + i).hide(50);
+    });
+  }
 });
 
 (function($) {})(jQuery);
